@@ -3,6 +3,7 @@ FROM alpine:3.3
 RUN adduser -S curator
 
 RUN apk add --update \
+    ca-certificates \
     python \
     py-pip \
     && pip install elasticsearch-curator \
