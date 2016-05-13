@@ -12,5 +12,4 @@ RUN apk add --update \
 
 USER curator
 
-ENTRYPOINT [ "/usr/bin/curator" ]
-
+ENTRYPOINT [ "/usr/bin/curator", "--certificate", "/etc/ssl/certs/ca-certificates.crt" ]
